@@ -5,6 +5,7 @@ let button3 = document.querySelector(".addbutton")
 let clickCounter2 = 0
 let clickCounter3 = 0
 let arr = []
+document.querySelector("input").focus()
 button1.style.backgroundImage = "url('/img/Group74.svg')"
 button1.addEventListener('mouseover', () => {
     button1.style.backgroundImage = `url('/img/Group73.svg')`;
@@ -15,6 +16,7 @@ button1.addEventListener('mouseleave', () => {
 
 button1.onclick = function () {
     sortListDir()
+   
     clickCounter3++
     if (clickCounter3 % 2 != 0) {
 
@@ -50,9 +52,10 @@ document.querySelector(".button2").addEventListener('mouseleave', () => {
 });
 function addlist(e) {
     clickCounter2++
+    document.querySelector(".tasks").scrollTop=document.querySelector(".tasks").scrollHeight
     if (e.key === "Enter" || e.keyCode === 13) {
     if (input.value != 0) {
-        // ul.scrollTop = ul.scrollHeight
+        ul.scrollTop = ul.scrollHeight
             button1.style.marginBottom = "0.5vw"
             ul.style.display = 'block'
             document.querySelector(".addbutton").style.marginBottom = "1.4vw"
@@ -60,7 +63,6 @@ function addlist(e) {
             document.querySelector(".one").style.borderTopLeftRadius = '0';
             document.querySelector(".one").style.borderTopRightRadius = '0';
             document.querySelector(".one").style.marginTop = '-2vw';
-            
             ul.style.paddingLeft = "1vw"
             ul.style.paddingBottom = "1vw"
             ul.style.borderBottom = "1px solid #c4c4c4";
@@ -68,8 +70,6 @@ function addlist(e) {
             ul.style.borderBottomRightRadius = '0.869vw';
             let li = document.createElement('p')
             li.classList.add("p")
-            input.focus()
-            ul.scrollTop = ul.scrollHeight
             li.innerText += input.value;
             li.style.cursor = "pointer"
             li.style.marginBottom = "0.43vw"
@@ -122,15 +122,17 @@ function addlist(e) {
 
 document.addEventListener("keyup", addlist)
 
-button3.onclick = function () {
+ function addbutton () {
     ul.style.borderBottom = "none";
     ul.style.borderBottomLeftRadius = '0';
     ul.style.borderBottomRightRadius = '0';
-    document.querySelector(".one").style.display = "block"
-    document.querySelector(".inputandbutton").style.width = "24.869vw"
-    input.focus();
-    ul.scrollTop = ul.scrollHeight
+    document.querySelector(".one").style.display = "block";
+    document.querySelector("input").focus()
+    document.querySelector(".tasks").scrollTop=document.querySelector(".tasks").scrollHeight
+    // document.querySelector(".inputandbutton").style.width = "24.869vw";
+ 
 }
+button3.addEventListener("click", addbutton)
 
 function sortListDir() {
     let list, i, switching, b, shouldSwitch, dir, switchcount = 0;

@@ -9,7 +9,7 @@ body{
     align-items: center;
     overflow: hidden;
 }
-@media (min-width: 806px) {
+@media (min-width: 862px) {
 
 
     .main {
@@ -75,7 +75,7 @@ body{
 
 
     input {
-        width: 21vw;
+        width: 22.677vw;
         height: 2.1vw;
         margin-top: 0.5vw;
         border: none;
