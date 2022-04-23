@@ -8,20 +8,20 @@ body{
     align-items: center;
     overflow: hidden;
 }
-@media (min-width: 510px) and (max-width:862px) {
+@media (min-width: 510px) and (max-width:859px) {
 
-    
+    .addbutton:hover{
+        opacity:0.9;
+    }
     .main {
-        width: 85vw;
-        margin-top: 28.994vw;
-        margin-bottom: 28.994vw;
+        width: 73vw;
         border-radius: 1.249vw;
         border: 0.087vw solid #C4C4C4;
     }
 
     .yellowSide {
         background-color: #FFDC40;
-        height: 6.499vw;
+        height: 4.499vw;
         border-top-left-radius: 1.249vw;
         border-top-right-radius: 1.249vw;
     }
@@ -32,7 +32,7 @@ body{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 900;
-        font-size: 6.75vw;
+        font-size: 5.75vw;
         line-height: 3.737vw;
         text-align: center;
         text-transform: capitalize;
@@ -61,6 +61,7 @@ body{
         z-index: -1;
         font-size: 3.5vw;
         font-weight: 400;
+        cursor: pointer;
     }
 
 
@@ -68,20 +69,18 @@ body{
         margin-top:2vw;
     }
     .btn{
-        /* -right: 1.269vw; */
         border-radius: 50%;
         margin-right:1.438vw ;
-        width: 3.156vw;
-        height: 3.156vw;
-        background-size: 3.156vw 3.156vw;
+        width: 4.156vw;
+        height: 4.156vw;
+        background-size: 100%;
         cursor: pointer;
     }
 
 
     input {
-        width: 64vw;
+        width: 52vw;
         height: 4.312vw;
-        margin-top: 3.719vw;
         border: none;
         border-radius: 1.883vw;
         font-size: 3.75vw;
@@ -93,37 +92,36 @@ body{
 
     .button1 {
 
-        margin-left: 76vw;
+        margin-left: 63vw;
         margin-top: 2vw;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        width: 5.8vw;
-        height:5.8vw;
-        background-size: 5.8vw 5.8vw;
+        width: 4.8vw;
+        height:3.8vw;
+        background-size: 4.8vw 3.8vw;
         cursor: pointer;
     }
 
     .button2 {
 
         margin-top: 3.258vw;
-        margin-left: 8.1vw;
+        margin-left: 7.2vw;
         border-radius: 50%;
         background-position: center;
-        width: 3.156vw;
-        height: 3.156vw;
+        width: 4.156vw;
+        height: 4.156vw;
         background-repeat: no-repeat;
-        background-size: cover;
-        background-size: 3.156vw 3.156vw;
+        background-size: 100%;
         cursor: pointer;
     }
 
-    .one {
+    .btnandinp {
 
         border: 0.089vw solid #C4C4C4;
         margin-left: 2.8vw;
         height: 8.988vw;
-        width: 79.15vw;
+        width: 67.1vw;
         border-radius: 1.249vw;
     }
 
@@ -132,10 +130,9 @@ body{
     .addbutton {
         display: flex;
         margin-bottom: 2.013vw;
-        margin-left: 27.95vw;
-        margin-top: 6.56vw;
-        margin-right: 27.95vw;
-        cursor: pointer;
+        margin-left: 21.95vw;
+        margin-top: 2.56vw;
+        margin-right: 21.95vw;
     }
 
     
@@ -143,9 +140,10 @@ body{
     .tasks {
         font-size: 3.75vw;
         font-weight: 400;
-        max-height: 31.25vw;
+        max-height: 21.25vw;
+        font-family:  Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
         overflow: auto;
-        width: 78.125vw;
+        width: 66.125vw;
         border: 0.087vw solid #C4C4C4;
         border-radius: 1.5vw;
         list-style: none;

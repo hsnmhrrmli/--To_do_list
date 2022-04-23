@@ -6,12 +6,12 @@ let clickCounter2 = 0
 let clickCounter3 = 0
 let arr = []
 document.querySelector("input").focus()
-button1.style.backgroundImage = "url('/img/Group74.svg')"
+button1.style.backgroundImage = "url('/img/srtgrdown.svg')"
 button1.addEventListener('mouseover', () => {
-    button1.style.backgroundImage = `url('/img/Group73.svg')`;
+    button1.style.backgroundImage = `url('/img/srtbldown.svg')`;
 });
 button1.addEventListener('mouseleave', () => {
-    button1.style.backgroundImage = "url('/img/Group74.svg')"
+    button1.style.backgroundImage = "url('/img/srtgrdown.svg')"
 });
 
 button1.onclick = function () {
@@ -20,35 +20,35 @@ button1.onclick = function () {
     clickCounter3++
     if (clickCounter3 % 2 != 0) {
 
-        button1.style.backgroundImage = "url('/img/Group91.svg')"
+        button1.style.backgroundImage = "url('/img/srtblup.svg')"
         button1.addEventListener('mouseover', () => {
-            button1.style.backgroundImage = `url('/img/Group91.svg')`;
+            button1.style.backgroundImage = `url('/img/srtblup.svg')`;
         });
         button1.addEventListener('mouseleave', () => {
-            button1.style.backgroundImage = "url('/img/Group90.svg')"
+            button1.style.backgroundImage = "url('/img/srtgrup.svg')"
         });
         
     } 
     else {
 
-        button1.style.backgroundImage = "url('/img/Group73.svg')"
+        button1.style.backgroundImage = "url('/img/srtbldown.svg')"
         button1.addEventListener('mouseover', () => {
-            button1.style.backgroundImage = `url('/img/Group73.svg')`;
+            button1.style.backgroundImage = `url('/img/srtbldown.svg')`;
         });
         button1.addEventListener('mouseleave', () => {
-            button1.style.backgroundImage = "url('/img/Group74.svg')"
+            button1.style.backgroundImage = "url('/img/srtgrdown.svg')"
         });
       
     }
 
 }
 
-document.querySelector(".button2").style.backgroundImage = "url('/img/Group77.svg')"
+document.querySelector(".button2").style.backgroundImage = "url('/img/greyx.svg')"
 document.querySelector(".button2").addEventListener('mouseover', () => {
-    document.querySelector(".button2").style.backgroundImage = `url('/img/Group70.svg')`;
+    document.querySelector(".button2").style.backgroundImage = `url('/img/prplex.svg')`;
 });
 document.querySelector(".button2").addEventListener('mouseleave', () => {
-    document.querySelector(".button2").style.backgroundImage = "url('/img/Group77.svg')"
+    document.querySelector(".button2").style.backgroundImage = "url('/img/greyx.svg')"
 });
 function addlist(e) {
     clickCounter2++
@@ -59,10 +59,10 @@ function addlist(e) {
             button1.style.marginBottom = "0.5vw"
             ul.style.display = 'block'
             document.querySelector(".addbutton").style.marginBottom = "1.4vw"
-            document.querySelector(".one").style.borderTop = "none"
-            document.querySelector(".one").style.borderTopLeftRadius = '0';
-            document.querySelector(".one").style.borderTopRightRadius = '0';
-            document.querySelector(".one").style.marginTop = '-2vw';
+            document.querySelector(".btnandinp").style.borderTop = "none"
+            document.querySelector(".btnandinp").style.borderTopLeftRadius = '0';
+            document.querySelector(".btnandinp").style.borderTopRightRadius = '0';
+            document.querySelector(".btnandinp").style.marginTop = '-2vw';
             ul.style.paddingLeft = "1vw"
             ul.style.paddingBottom = "1vw"
             ul.style.borderBottom = "1px solid #c4c4c4";
@@ -81,16 +81,16 @@ function addlist(e) {
             btn.style.display = "flex"
             btn.style.alignItems = 'center'
             li.style.justifyContent = "space-between"
-            btn.style.backgroundImage = "url('/img/Group77.svg')"
+            btn.style.backgroundImage = "url('/img/greyx.svg')"
             btn.classList.add("btn");
             btn.style.backgroundRepeat='no-repeat'
-            btn.style.backgroundSize='cover'
+            btn.style.backgroundSize='100%'
 
             btn.addEventListener('mouseover', () => {
-                btn.style.backgroundImage = `url('/img/Group70.svg')`;
+                btn.style.backgroundImage = `url('/img/prplex.svg')`;
             });
             btn.addEventListener('mouseleave', () => {
-                btn.style.backgroundImage = "url('/img/Group77.svg')"
+                btn.style.backgroundImage = "url('/img/greyx.svg')"
             });
             btn.style.backgroundPosition = "center"
             btn.addEventListener("click", emptyinp)
@@ -98,23 +98,23 @@ function addlist(e) {
             function emptyinp() {
                 ul.removeChild(li)
                 if (ul.childElementCount == 0) {
-                    document.querySelector(".one").style.marginTop = "2vw"
-                    document.querySelector(".one").style.borderTop = "1px solid #C4C4C4";
-                    document.querySelector(".one").style.borderTopLeftRadius = '0.869vw';
-                    document.querySelector(".one").style.borderTopRightRadius = '0.869vw';
+                    document.querySelector(".btnandinp").style.marginTop = "2vw"
+                    document.querySelector(".btnandinp").style.borderTop = "1px solid #C4C4C4";
+                    document.querySelector(".btnandinp").style.borderTopLeftRadius = '0.869vw';
+                    document.querySelector(".btnandinp").style.borderTopRightRadius = '0.869vw';
                     ul.style.display = "none"
-                    document.querySelector(".one").style.display = "block"
-                    document.querySelector(".one").style.marginTop = "0.58vw"
-                    button1.style.backgroundImage = "url('/img/Group74.svg')"
+                    document.querySelector(".btnandinp").style.display = "block"
+                    document.querySelector(".btnandinp").style.marginTop = "0.58vw"
+                    button1.style.backgroundImage = "url('/img/srtgrdown.svg')"
                 }
 
 
             }
 
             input.value = ""
-            document.querySelector(".one").style.display = "none"
+            document.querySelector(".btnandinp").style.display = "none"
         } 
-        else if (document.querySelector(".one").style.display=== 'block'&&input.value==0) {
+        else if (document.querySelector(".btnandinp").style.display=== 'block'&&input.value==0) {
             alert("You have to add something to use tracker")
         }
     }
@@ -126,11 +126,10 @@ document.addEventListener("keyup", addlist)
     ul.style.borderBottom = "none";
     ul.style.borderBottomLeftRadius = '0';
     ul.style.borderBottomRightRadius = '0';
-    document.querySelector(".one").style.display = "block";
+    document.querySelector(".btnandinp").style.display = "block";
     document.querySelector("input").focus()
     document.querySelector(".tasks").scrollTop=document.querySelector(".tasks").scrollHeight
-    // document.querySelector(".inputandbutton").style.width = "24.869vw";
- 
+
 }
 button3.addEventListener("click", addbutton)
 
