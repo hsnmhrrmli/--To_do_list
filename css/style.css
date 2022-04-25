@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
+@media (min-width: 860px) {
 body{
     width: 100vw;
     height: 100vh;
@@ -9,8 +11,6 @@ body{
     align-items: center;
     overflow: hidden;
 }
-@media (min-width: 860px) {
-
     .addbutton:hover{
         opacity:0.9 ;
     }
@@ -82,7 +82,7 @@ body{
 
 
     input {
-        width: 22vw;
+        width: 13.33333vw;
         height: 2.1vw;
         margin-top: 0.869vw;
         border: none;
@@ -107,7 +107,7 @@ body{
 
     .button2 {
         margin-top: 0.875vw;
-        margin-left: -2vw;
+        margin-right: 1vw;
         border-radius: 50%;
         background-position: center;
         width: 1.9vw;
@@ -115,6 +115,7 @@ body{
         background-size: 100%;
         background-repeat: no-repeat;
         cursor: pointer;
+        
     }
 
     .btnandinp {
@@ -125,6 +126,7 @@ body{
         height: 3.47vw;
         width: 24.869vw;
         border-radius: 0.869vw;
+        justify-content: space-between;
     }
 
     .inputandbutton {

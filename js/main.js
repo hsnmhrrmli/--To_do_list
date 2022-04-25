@@ -103,7 +103,8 @@ function addlist(e) {
                     document.querySelector(".btnandinp").style.borderTopLeftRadius = '0.869vw';
                     document.querySelector(".btnandinp").style.borderTopRightRadius = '0.869vw';
                     ul.style.display = "none"
-                    document.querySelector(".btnandinp").style.display = "block"
+                    document.querySelector(".btnandinp").style.display = "flex";
+                    document.querySelector(".btnandinp").style.justifyContent = "space-between";
                     document.querySelector(".btnandinp").style.marginTop = "0.58vw"
                     button1.style.backgroundImage = "url('/img/srtgrdown.svg')"
                 }
@@ -126,7 +127,8 @@ document.addEventListener("keyup", addlist)
     ul.style.borderBottom = "none";
     ul.style.borderBottomLeftRadius = '0';
     ul.style.borderBottomRightRadius = '0';
-    document.querySelector(".btnandinp").style.display = "block";
+    document.querySelector(".btnandinp").style.display = "flex";
+    document.querySelector(".btnandinp").style.justifyContent = "space-between";
     document.querySelector("input").focus()
     document.querySelector(".tasks").scrollTop=document.querySelector(".tasks").scrollHeight
 
